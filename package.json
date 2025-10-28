@@ -1,0 +1,20 @@
+{
+  "name": "tigerbeetle-demo",
+  "version": "1.0.0",
+  "description": "TigerBeetle account creation demo",
+  "main": "demo-create-account.ts",
+  "scripts": {
+    "demo": "tsx create-account.ts user-123"
+  },
+  "dependencies": {
+    "@resonatehq/sdk": "^0.8.3",
+    "@types/better-sqlite3": "^7.6.13",
+    "better-sqlite3": "^12.4.1",
+    "tigerbeetle-node": "^0.16.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}

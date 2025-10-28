@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" viewBox="-361.02734 -83 796.0273 456" width="796.0273" height="456">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="#353f58">
+      <g>
+        <path d="M 8 0 L 0 -3 L 0 3 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="Canvas_1" stroke="none" stroke-opacity="1" stroke-dasharray="none" fill-opacity="1" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="-361.02734" y="-83" width="796.0273" height="456"/>
+    <g id="Canvas_1_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_111">
+        <rect x="-265" y="-25" width="140" height="340" fill="#edf0f2"/>
+      </g>
+      <g id="Graphic_108">
+        <rect x="-25" y="-25" width="460" height="340" fill="#edf0f2"/>
+      </g>
+      <g id="Graphic_8">
+        <circle cx="-75" cy="60" r="25.0000399475474" fill="white"/>
+        <circle cx="-75" cy="60" r="25.0000399475474" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_9">
+        <circle cx="-75" cy="230" r="25.0000399475474" fill="white"/>
+        <circle cx="-75" cy="230" r="25.0000399475474" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_11">
+        <line x1="-49.99999" y1="60" x2="-24980018e-22" y2="60" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_12">
+        <line x1="-49.99999" y1="230" x2="-24980018e-22" y2="230" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_2">
+        <rect x="0" y="0" width="180" height="120" fill="white"/>
+        <rect x="0" y="0" width="180" height="120" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 50.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="37.736" y="15" xml:space="preserve">e.g. Postgres</tspan>
+        </text>
+      </g>
+      <g id="Graphic_3">
+        <text transform="translate(73.32715 101)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" fill="black" x="0" y="11" xml:space="preserve">OLGP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_5">
+        <rect x="0" y="170" width="180" height="120" fill="white"/>
+        <rect x="0" y="170" width="180" height="120" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(5 220.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="44.416" y="15" xml:space="preserve">TigerBeetle</tspan>
+        </text>
+      </g>
+      <g id="Graphic_4">
+        <text transform="translate(74.77148 271)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" fill="black" x="0" y="11" xml:space="preserve">OLTP</tspan>
+        </text>
+      </g>
+      <g id="Graphic_10">
+        <path d="M 239 0 L 401 0 C 405.97056 3043592e-22 410 4.0294373 410 9 L 410 111 C 410 115.97056 405.97056 120 401 120 L 239 120 C 234.02944 120 230 115.97056 230 111 L 230 9 C 230 4.0294373 234.02944 -6087184e-22 239 0 Z" fill="white"/>
+        <path d="M 239 0 L 401 0 C 405.97056 3043592e-22 410 4.0294373 410 9 L 410 111 C 410 115.97056 405.97056 120 401 120 L 239 120 C 234.02944 120 230 115.97056 230 111 L 230 9 C 230 4.0294373 234.02944 -6087184e-22 239 0 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_13">
+        <line x1="180" y1="60" x2="230" y2="60" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_14">
+        <path d="M 239 170 L 401 170 C 405.97056 170 410 174.02944 410 179 L 410 281 C 410 285.97056 405.97056 290 401 290 L 239 290 C 234.02944 290 230 285.97056 230 281 L 230 179 C 230 174.02944 234.02944 170 239 170 Z" fill="white"/>
+        <path d="M 239 170 L 401 170 C 405.97056 170 410 174.02944 410 179 L 410 281 C 410 285.97056 405.97056 290 401 290 L 239 290 C 234.02944 290 230 285.97056 230 281 L 230 179 C 230 174.02944 234.02944 170 239 170 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_15">
+        <line x1="180" y1="230" x2="230" y2="230" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_16">
+        <path d="M 249 180 L 306 180 C 310.97056 180 315 184.02944 315 189 L 315 271 C 315 275.97056 310.97056 280 306 280 L 249 280 C 244.02944 280 240 275.97056 240 271 L 240 189 C 240 184.02944 244.02944 180 249 180 Z" fill="white"/>
+        <path d="M 249 180 L 306 180 C 310.97056 180 315 184.02944 315 189 L 315 271 C 315 275.97056 310.97056 280 306 280 L 249 280 C 244.02944 280 240 275.97056 240 271 L 240 189 C 240 184.02944 244.02944 180 249 180 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(245 222.832)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="black" x="7.162" y="11" xml:space="preserve">Accounts</tspan>
+        </text>
+      </g>
+      <g id="Graphic_17">
+        <path d="M 334 180 L 391 180 C 395.97056 180 400 184.02944 400 189 L 400 271 C 400 275.97056 395.97056 280 391 280 L 334 280 C 329.02944 280 325 275.97056 325 271 L 325 189 C 325 184.02944 329.02944 180 334 180 Z" fill="white"/>
+        <path d="M 334 180 L 391 180 C 395.97056 180 400 184.02944 400 189 L 400 271 C 400 275.97056 395.97056 280 391 280 L 334 280 C 329.02944 280 325 275.97056 325 271 L 325 189 C 325 184.02944 329.02944 180 334 180 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(330 222.832)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="black" x="8.056" y="11" xml:space="preserve">Transfers</tspan>
+        </text>
+      </g>
+      <g id="Graphic_19">
+        <path d="M 249 10 L 306 10 C 310.97056 10 315 14.029437 315 19 L 315 101 C 315 105.97056 310.97056 110 306 110 L 249 110 C 244.02944 110 240 105.97056 240 101 L 240 19 C 240 14.029437 244.02944 10 249 10 Z" fill="white"/>
+        <path d="M 249 10 L 306 10 C 310.97056 10 315 14.029437 315 19 L 315 101 C 315 105.97056 310.97056 110 306 110 L 249 110 C 244.02944 110 240 105.97056 240 101 L 240 19 C 240 14.029437 244.02944 10 249 10 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(245 52.832)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="black" x="7.162" y="11" xml:space="preserve">Accounts</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <path d="M 334 10 L 391 10 C 395.97056 10 400 14.029437 400 19 L 400 101 C 400 105.97056 395.97056 110 391 110 L 334 110 C 329.02944 110 325 105.97056 325 101 L 325 19 C 325 14.029437 329.02944 10 334 10 Z" fill="white"/>
+        <path d="M 334 10 L 391 10 C 395.97056 10 400 14.029437 400 19 L 400 101 C 400 105.97056 395.97056 110 391 110 L 334 110 C 329.02944 110 325 105.97056 325 101 L 325 19 C 325 14.029437 329.02944 10 334 10 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(330 50.776)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="24.5" y="15" xml:space="preserve">…</tspan>
+        </text>
+      </g>
+      <g id="Graphic_25">
+        <rect x="-240" y="0" width="90" height="120" fill="white"/>
+        <rect x="-240" y="0" width="90" height="120" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_26">
+        <rect x="-240" y="170" width="90" height="120" fill="white"/>
+        <rect x="-240" y="170" width="90" height="120" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_27">
+        <line x1="-150" y1="60" x2="-100.00001" y2="60" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_28">
+        <line x1="-150" y1="230" x2="-100.00001" y2="230" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_24">
+        <rect x="-240" y="0" width="90" height="290" fill="white"/>
+        <rect x="-240" y="0" width="90" height="290" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <text transform="translate(-235 126.552)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="10.216" y="15" xml:space="preserve">Account</tspan>
+          <tspan font-family="Helvetica Neue" font-size="16" fill="black" x="9.776" y="33.448" xml:space="preserve">Creation</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(-116.02734 5)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" fill="black" x="0" y="11" xml:space="preserve">Create Account</tspan>
+        </text>
+      </g>
+      <g id="Graphic_31">
+        <text transform="translate(-116.02734 175)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" fill="black" x="0" y="11" xml:space="preserve">Create Account</tspan>
+        </text>
+      </g>
+      <g id="Graphic_32">
+        <circle cx="-315" cy="145" r="25.0000399475474" fill="white"/>
+        <circle cx="-315" cy="145" r="25.0000399475474" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Line_33">
+        <line x1="-290" y1="145" x2="-240" y2="145" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(-356.02734 90)" fill="black">
+          <tspan font-family="Helvetica" font-size="12" fill="black" x="0" y="11" xml:space="preserve">Create Account</tspan>
+        </text>
+      </g>
+      <g id="Graphic_112">
+        <circle cx="-315" cy="145" r="15.0000239685284" fill="#353f58"/>
+        <text transform="translate(-322 137.832)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="3.664" y="11" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_113">
+        <circle cx="-314.96" cy="145.04" r="15.0000239685284" fill="#353f58"/>
+        <text transform="translate(-321.96 137.872)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="3.664" y="11" xml:space="preserve">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_114">
+        <circle cx="-75" cy="60" r="15.0000239685284" fill="#353f58"/>
+        <text transform="translate(-82 52.832)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="3.664" y="11" xml:space="preserve">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_115">
+        <circle cx="-75" cy="230" r="15.0000239685284" fill="#353f58"/>
+        <text transform="translate(-82 222.832)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="3.664" y="11" xml:space="preserve">3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_116">
+        <text transform="translate(252.41406 -73)" fill="black">
+          <tspan font-family="Helvetica" font-size="16" fill="black" x="0" y="15" xml:space="preserve">Stores master data</tspan>
+          <tspan font-family="Helvetica" font-style="italic" font-size="16" fill="black" x="18.671875" y="34" xml:space="preserve">Filing Cabinet</tspan>
+        </text>
+      </g>
+      <g id="Graphic_117">
+        <text transform="translate(263.53516 325)" fill="black">
+          <tspan font-family="Helvetica" font-style="italic" font-size="16" fill="black" x="38.820312" y="15" xml:space="preserve">Vault</tspan>
+          <tspan font-family="Helvetica" font-size="16" fill="black" x="0" y="34" xml:space="preserve">Stores transfers</tspan>
+        </text>
+      </g>
+      <g id="Line_119">
+        <line x1="320" y1="-25" x2="320" y2="-9.9" marker-end="url(#FilledArrow_Marker)" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+      <g id="Line_120">
+        <line x1="320" y1="315" x2="320" y2="299.9" marker-end="url(#FilledArrow_Marker)" stroke="#353f58" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4.0,4.0" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
