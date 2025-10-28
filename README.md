@@ -35,7 +35,10 @@ The example is a command line interface to consistently create an account in the
 
 ### Prerequisites
 
-Download TigerBeetle binary (download from [https://docs.tigerbeetle.com/start](https://docs.tigerbeetle.com/start/#install))
+Download the required binaries to the `bin/` directory:
+
+1. **TigerBeetle**: Download from [https://docs.tigerbeetle.com/start](https://docs.tigerbeetle.com/start/#install)
+2. **Resonate**: Download from [https://github.com/resonatehq/resonate/releases](https://github.com/resonatehq/resonate/releases)
 
 ### Installation
 
@@ -63,7 +66,15 @@ The setup script will:
 In a separate terminal window, start TigerBeetle:
 
 ```bash
-./tigerbeetle start --addresses=3000 bin/0_0.tigerbeetle
+./bin/tigerbeetle start --addresses=3000 bin/0_0.tigerbeetle
+```
+
+### Running Resonate
+
+In a separate terminal window, start Resonate:
+
+```bash
+./bin/resonate dev
 ```
 
 ### Running the Example

@@ -53,9 +53,7 @@ echo ""
 sqlite3 "$SQLITE_DB" <<EOF
 CREATE TABLE accounts (
   uuid TEXT PRIMARY KEY,
-  guid TEXT NOT NULL UNIQUE,
-  ledger INTEGER NOT NULL,
-  code INTEGER NOT NULL
+  guid TEXT NOT NULL UNIQUE
 );
 EOF
 

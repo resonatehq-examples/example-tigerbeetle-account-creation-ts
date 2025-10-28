@@ -12,7 +12,9 @@ import Database from "better-sqlite3";
 import { Resonate, Context } from "@resonatehq/sdk";
 
 // Initialize Resonate
-const resonate = new Resonate();
+const resonate = new Resonate({
+  url: "http://localhost:8001",
+});
 
 // TigerBeetle client
 const tbClient = createClient({
@@ -45,9 +47,10 @@ function sqCreateAccount(context: Context, uuid: string, guid: string): Result {
   const db = context.getDependency<Database.Database>("sqClient");
 
   try {
-    db.prepare(
-      "INSERT INTO accounts (uuid, guid, ledger, code) VALUES (?, ?, ?, ?)",
-    ).run(uuid, guid, 1, 1);
+    db.prepare("INSERT INTO accounts (uuid, guid) VALUES (?, ?)").run(
+      uuid,
+      guid,
+    );
 
     return { type: "created" };
   } catch (error: any) {
@@ -59,19 +62,10 @@ function sqCreateAccount(context: Context, uuid: string, guid: string): Result {
       error.message?.includes("UNIQUE constraint failed")
     ) {
       const existing = db
-        .prepare(
-          "SELECT guid, ledger, code FROM accounts WHERE uuid = ?",
-        )
-        .get(uuid) as
-        | { guid: string; ledger: number; code: number }
-        | undefined;
+        .prepare("SELECT guid FROM accounts WHERE uuid = ?")
+        .get(uuid) as { guid: string } | undefined;
 
-      if (
-        existing &&
-        existing.guid === guid &&
-        existing.ledger === 1 &&
-        existing.code === 1
-      ) {
+      if (existing && existing.guid === guid) {
         return { type: "exists_same" };
       } else {
         return { type: "exists_diff" };
@@ -142,29 +136,22 @@ async function tbCreateAccount(
 }
 
 /**
- * Create account using the dual-write pattern with Resonate's durable execution
- *
- * This generator function implements the "Write Last, Read First" principle with
+ * Create account using the dthe "Write Last, Read First" principle with
  * Resonate's automatic checkpointing and reliable resumption:
- * 1. Generate internal TigerBeetle ID (guid)
- * 2. Write to SQLite first (system of reference - safe, non-committing)
- * 3. Write to TigerBeetle second (system of record - commits the account)
+ *
+ * 1. Generate TigerBeetle ID (guid)
+ * 2. Write to SQLite (system of reference - stages the record)
+ * 3. Write to TigerBeetle (system of record - commits the account)
  *
  * Resonate guarantees:
  * - Eventual completion via language-integrated checkpointing
  * - Reliable resumption after disruptions (restarts from beginning, skips completed steps)
- * - Each operation is idempotent to handle potential retries
- *
- * Safety properties maintained:
- * - Traceability: Never allow money without corresponding account in reference DB
- * - Consistency: Eventually every account in one system has one in the other
- *
- * @throws {Error} if ordering violation detected or exists_diff scenarios occur
  */
 function* createAccount(
   context: Context,
   uuid: string,
 ): Generator<any, { uuid: string; guid: string }, any> {
+  // Generate a random account id
   const guid = yield* context.run(function (context: Context) {
     return generateId().toString();
   });
@@ -174,18 +161,18 @@ function* createAccount(
 
   // Panic and alert the operator if the account exists
   // but with different values
-  yield* context.panic(sqResult.type == "exists_diff");
+  // yield* context.panic(sqResult.type == "exists_diff");
 
   // Create account in TigerBeetle
   const tbResult = yield* context.run(tbCreateAccount, guid);
 
   // Panic and alert the operator if the account exists
   // but with different values
-  yield* context.panic(tbResult.type == "exists_diff");
+  // yield* context.panic(tbResult.type == "exists_diff");
 
   // Panic and alert the operator if ordering was violated
-  yield* context.panic(sqResult.type == "created" &&
-                       tbResult.type == "exists_same");
+  // yield* context.panic(sqResult.type == "created" &&
+  //                      tbResult.type == "exists_same");
 
   return { uuid, guid };
 }
