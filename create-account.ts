@@ -193,7 +193,7 @@ async function main() {
       createAccount,
       uuid,
     );
-
+    resonate.stop();
     console.log(`UUID: ${result.uuid}`);
     console.log(`GUID: ${result.guid}`);
   } catch (error) {
