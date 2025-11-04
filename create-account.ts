@@ -161,18 +161,19 @@ function* createAccount(
 
   // Panic and alert the operator if the account exists
   // but with different values
-  // yield* context.panic(sqResult.type == "exists_diff");
+  yield* context.panic(sqResult.type == "exists_diff");
 
   // Create account in TigerBeetle
   const tbResult = yield* context.run(tbCreateAccount, guid);
 
   // Panic and alert the operator if the account exists
   // but with different values
-  // yield* context.panic(tbResult.type == "exists_diff");
+  yield* context.panic(tbResult.type == "exists_diff");
 
   // Panic and alert the operator if ordering was violated
-  // yield* context.panic(sqResult.type == "created" &&
-  //                      tbResult.type == "exists_same");
+  yield* context.panic(
+    sqResult.type == "created" && tbResult.type == "exists_same",
+  );
 
   return { uuid, guid };
 }
