@@ -2,14 +2,14 @@
 import {
   createClient,
   id as generateId,
-  Client,
+  type Client,
   CreateAccountError,
-  Account,
+  type Account,
 } from "tigerbeetle-node";
 // Sqlite
 import Database from "better-sqlite3";
 // Resonate
-import { Resonate, Context } from "@resonatehq/sdk";
+import { Resonate, type Context } from "@resonatehq/sdk";
 
 // Initialize Resonate
 const resonate = new Resonate({
@@ -44,7 +44,7 @@ export type Result =
  *
  */
 function sqCreateAccount(context: Context, uuid: string, guid: string): Result {
-  const db = context.getDependency<Database.Database>("sqClient");
+  const db = context.getDependency<Database.Database>("sqClient")!;
 
   try {
     db.prepare("INSERT INTO accounts (uuid, guid) VALUES (?, ?)").run(
@@ -86,7 +86,7 @@ async function tbCreateAccount(
   context: Context,
   guid: string,
 ): Promise<Result> {
-  const client = context.getDependency<Client>("tbClient");
+  const client = context.getDependency<Client>("tbClient")!;
 
   const account: Account = {
     id: BigInt(guid),
@@ -112,7 +112,7 @@ async function tbCreateAccount(
     return { type: "created" };
   }
 
-  const error = errors[0];
+  const error = errors[0]!;
 
   // Account exists with the same properties (idempotent)
   if (error.result === CreateAccountError.exists) {
