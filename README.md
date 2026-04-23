@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/banner-light.png">
+    <img alt="TigerBeetle Account Creation — Resonate example" src="./assets/banner-dark.png">
+  </picture>
+</p>
+
 # Consistency Cabaret
 
 An example demonstrating how to maintain consistency in the absence of transactions, using the Write Last, Read First principle featuring [TigerBeetle](https://tigerbeetle.com)
